@@ -1,0 +1,2 @@
+volumes/devices/*.js
+volumes/result/*.json

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  zigbee-device:
+    build: .
+    container_name: zigbee_device
+    restart: unless-stopped
+    volumes:
+      - ./volumes/result:/converter/result
+      - ./volumes/devices:/converter/devices
+    environment:
+      - NODE_ENV=development
+      # - NODE_DEBUG=*
